@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/Qnum"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="56dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Question"
+        app:layout_constraintStart_toStartOf="@+id/Question" />
+
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:layout_marginBottom="196dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textSize="120dp"
+        app:fontFamily="@font/carter_one"
+        app:layout_constraintBottom_toBottomOf="@+id/ansBtn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <Button
+        android:id="@+id/ansBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:width="120dp"
+        android:height="100dp"
+        android:background="@drawable/answer_button"
+        android:fontFamily="@font/arbutus"
+        android:onClick="checkAnswer"
+        android:text="Answer 1 "
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ansBtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ansBtn2" />
+
+    <Button
+        android:id="@+id/ansBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="268dp"
+        android:width="120dp"
+        android:height="100dp"
+        android:background="@drawable/answer_button"
+        android:onClick="checkAnswer"
+        android:text="Answer 2"
+        android:fontFamily="@font/arbutus"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ansBtn1" />
+
+    <Button
+        android:id="@+id/ansBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="60dp"
+        android:width="120dp"
+        android:height="100dp"
+        android:background="@drawable/answer_button"
+        android:onClick="checkAnswer"
+        android:text="Answer 3"
+        android:fontFamily="@font/arbutus"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ansBtn4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansBtn1" />
+
+    <Button
+        android:id="@+id/ansBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:width="120dp"
+        android:height="100dp"
+        android:background="@drawable/answer_button"
+        android:onClick="checkAnswer"
+        android:text="Answer 4"
+        android:fontFamily="@font/arbutus"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ansBtn3"
+        app:layout_constraintTop_toTopOf="@+id/ansBtn3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
